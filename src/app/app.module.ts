@@ -8,6 +8,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ContactDetailsComponent } from './components/contact-details/contact-details.component';
 import { ContactListComponent } from './components/contact-list/contact-list.component';
 import { FullnamePipe } from './pipe/fullname.pipe';
+import { AgePipe } from './pipe/age.pipe';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FullnamePipe } from './pipe/fullname.pipe';
     HomeComponent,
     ContactDetailsComponent,
     ContactListComponent,
-    FullnamePipe
+    FullnamePipe,
+    AgePipe
   ],
   imports: [
     BrowserModule
