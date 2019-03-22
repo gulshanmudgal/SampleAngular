@@ -7,6 +7,7 @@ import { SidebarComponent } from './components/sidebarr/sidebar.component';
 import { HomeComponent } from './components/home/home.component';
 import { ContactDetailsComponent } from './components/contact-details/contact-details.component';
 import { ContactListComponent } from './components/contact-list/contact-list.component';
+import { FullnamePipe } from './pipe/fullname.pipe';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ContactListComponent } from './components/contact-list/contact-list.com
     SidebarComponent,
     HomeComponent,
     ContactDetailsComponent,
-    ContactListComponent
+    ContactListComponent,
+    FullnamePipe
   ],
   imports: [
     BrowserModule
