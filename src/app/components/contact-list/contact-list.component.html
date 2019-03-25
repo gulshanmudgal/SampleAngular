@@ -1,3 +1,17 @@
-<p>
-  contact-list works!
-</p>
+<h3>List of All Contacts</h3>
+<hr />
+<div class="list-group" >
+    <div *ngFor="let contact of contacts">
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="{{contact.picture}}" alt="" height="100px">
+            </div>
+            <div class="cols-sm-4">
+                <h4 [routerLink]="['/contact-details', contact.id]">{{contact | fullname}}</h4>
+                <p>{{contact.city}}</p>
+            </div>
+        </div>
+        <hr />
+    </div>
+    <button class="btn btn-primary" (click)="loadMoredata()">Load More Data</button>
+</div>
